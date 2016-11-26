@@ -62,6 +62,8 @@ dialog.matches('Complaint', [
                 if(!session.userData.number) {
                         session.send('We regret the inconvenience caused. Please DM us your contact number so that our officials could get in touch with you!!');
                 }
+	}
+]);
 
 dialog.matches('Appreciation', [
 	function(session, args, next) {
