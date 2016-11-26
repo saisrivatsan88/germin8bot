@@ -67,8 +67,8 @@ dialog.matches('Complaint', [
 
 dialog.matches('Appreciation', [
 	function(session, args, next) {
-                session.send("Thank you for your kind words!!");
-		request('https://qnaservice.cloudapp.net/KBService.svc/GetAnswer?kbId=3a8061b7aef841668082920e074f842e&question=' + querystring.escape(session.message.text), function (error, response, body) { 
+                session.send("Thank you for your kind words!! You can contact us whenever you face any problem.");
+		/*request('https://qnaservice.cloudapp.net/KBService.svc/GetAnswer?kbId=3a8061b7aef841668082920e074f842e&question=' + querystring.escape(session.message.text), function (error, response, body) { 
                         var json = JSON.parse(body);
                         var answer = json.answer;
                         if(answer != "No good match found in the KB") {
@@ -82,7 +82,7 @@ dialog.matches('Appreciation', [
 		                        }
 				})
 			}
-                 });
+                 });*/
         }
 ]);
 
